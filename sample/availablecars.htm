@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<link rel="stylesheet" href="/css/car.css"/>
+<script type="text/javaScript">
+    
+</script>
+<body>
+	<header>找车</header>
+	<nav></nav>
+	<section>
+		<form id="publishFindPassengerForm" action="messagelist.htm" method="post">
+			<div class="inputAddon">
+				<span class="label">车主</span>
+				<input class="inputAddon-field" type="text" name="driver"></input>
+			</div>
+			<div class="inputAddon">
+				<span class="label">车型</span>
+				<input class="inputAddon-field" type="text" name="cartype"></input>
+			</div>
+			<div class="inputAddon">
+				<span class="label">联系电话</span>
+				<input class="inputAddon-field" type="text" name="contactphone"></input>
+			</div>
+			<div class="inputAddon">
+				<span class="label">空位数</span>
+				<input class="inputAddon-field" type="text" name="emtpyseat"></input>
+			</div>
+			<div class="inputAddon">
+				<span class="label">起始点</span>
+				<input class="inputAddon-field" type="text" name="startpoint"></input>
+			</div>
+            <div class="inputAddon">
+				<span class="label">终点</span>
+				<input class="inputAddon-field" type="text" name="destination"></input>
+			</div> 			
+			<div id="publishbutton"><input type="submit" value="发布" onclick="return submitLogin();"></input></div>
+		</form>	    
+	</section><aside></aside>
+	<footer></footer>
+</body>
+</html>

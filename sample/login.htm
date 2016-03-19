@@ -1,0 +1,81 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+body {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+	justify-content:flex-start;
+	align-items:center;
+}
+section {
+    display:flex;
+    flex:1;
+	flex-direction: column;
+	justify-content:flex-start;
+	align-items:center;
+}
+
+form {
+    display:flex;    
+	flex-direction: column;
+	justify-content:flex-start;
+	align-items:center;	
+}
+
+.inputAddon {
+    display: flex;
+	flex-direction: row;
+	margin-bottom:5px;
+}
+
+.inputAddon-field {
+    flex:1;
+}
+
+#loginbutton{
+   margin-left: 5px;
+}
+
+footer {
+   display:flex;
+   justify-content:center;
+}
+
+</style>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javaScript">
+    function submitLogin(){
+	   var logForm = document.getElementById("loginForm");
+	   //alert(logForm.action);	   
+	   //loginForm.submit();//can use form attribute: onsubmit="return submitLogin();" 
+	   return true;
+	}
+	
+	function registerUser(){
+	    //alert(window.location.href);
+	    window.location.href="home.htm";
+	}
+</script>
+<body>
+	<header>开车</header>
+	<nav></nav>
+	<section>
+	
+		<form id="loginForm" action="publishmessage.htm" method="post">
+			<div class="inputAddon">
+				<span>用户</span>
+				<input class="inputAddon-field" type="text" name="userid"></input>
+			</div>
+			<div class="inputAddon">
+				<span>密码</span>
+				<input class="inputAddon-field" type="text" name="userpwd"></input>
+			</div>
+			<div id="loginbutton"><input type="submit" value="登录" onclick="return submitLogin();"></input></div>
+			<div><input type="button" value="新用户注册" onclick="registerUser()"></input></div>	
+		</form>	    	
+	</section><aside></aside>
+	<footer></footer>
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE HTML>
+<html>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<style type="text/css">
+body {
+    display:flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+section {
+    display:flex;
+    flex:1;
+}
+
+footer {
+   display:flex;
+   justify-content:center;
+}
+
+#btnPanel {
+    display:flex;
+	justify-content:space-between;
+	flex-basis:200px;
+	<!--border: 1px solid red;-->
+}
+
+#homebtn{
+   flex:1 0 50%;
+}
+
+</style>
+<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javaScript">
+    function findPassenger() {
+	}
+	
+	function findCar() {
+	}
+</script>
+<body>
+	<header></header>
+	<nav></nav>
+	<section></section><aside></aside>
+	<footer><div id="btnPanel"><input class="homebtn" type="button" value="找人" onclick="findPassenger()"></input><input class="homebtn" type="button" value="搭车" onclick="findCar()"></input></div></footer>
+</body>
+</html>
